@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar pedido - Esquina do Sabor</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>🍔 Esquina do Sabor</h1>
+
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="menu.html">Cardápio</a>
+            <a href="cart.html">Carrinho</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h2>Finalizar pedido</h2>
+
+        <form id="form-pedido">
+
+            <h3>Dados do cliente</h3>
+
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" required>
+
+            <h3>Forma de recebimento</h3>
+
+            <select id="recebimento" required>
+                <option value="">Selecione</option>
+                <option value="Entrega">Entrega em casa</option>
+                <option value="Retirada">Retirar no estabelecimento</option>
+                <option value="Local">Consumir no local</option>
+            </select>
+
+            <div id="campo-endereco">
+                <label for="endereco">Endereço de entrega</label>
+                <input type="text" id="endereco">
+            </div>
+
+            <h3>Forma de pagamento</h3>
+
+            <select id="pagamento" required>
+                <option value="">Selecione</option>
+                <option value="Pix">Pix</option>
+                <option value="Dinheiro">Dinheiro</option>
+                <option value="Cartão de crédito">Cartão de crédito</option>
+                <option value="Cartão de débito">Cartão de débito</option>
+            </select>
+
+            <section id="cartao-area" class="cartao-area" hidden aria-live="polite">
+                <h3>Parcelamento no cartão</h3>
+                <label for="parcelas">Quantidade de parcelas</label>
+                <select id="parcelas">
+                    <option value="1">1x</option>
+                    <option value="2">2x</option>
+                    <option value="3">3x</option>
+                    <option value="4">4x</option>
+                    <option value="5">5x</option>
+                    <option value="6">6x</option>
+                    <option value="7">7x</option>
+                    <option value="8">8x</option>
+                    <option value="9">9x</option>
+                    <option value="10">10x</option>
+                    <option value="11">11x</option>
+                    <option value="12">12x</option>
+                </select>
+                <p id="parcelamento-resumo" class="parcelamento-resumo"></p>
+                <p class="cartao-aviso">Simulação acadêmica sem juros. Nenhuma cobrança no cartão é realizada neste site.</p>
+            </section>
+
+            <section class="resumo">
+                <h3>Resumo do pedido</h3>
+                <p>Total: <strong id="total-checkout">R$ 0,00</strong></p>
+            </section>
+
+            <section id="pix-area" class="pix-area" hidden aria-live="polite">
+                <h3>Pagamento via Pix</h3>
+                <p class="pix-aviso">Demonstração do projeto: a chave e o QR Code abaixo são simulados e não recebem pagamentos reais.</p>
+
+                <div class="pix-conteudo">
+                    <div class="pix-qr-bloco">
+                        <div id="pix-qrcode" class="pix-qrcode" aria-label="QR Code Pix demonstrativo"></div>
+                        <p>QR Code demonstrativo</p>
+                    </div>
+
+                    <div class="pix-dados">
+                        <label for="pix-chave">Chave aleatória de demonstração</label>
+                        <input type="text" id="pix-chave" readonly>
+                        <button type="button" class="btn-secundario pix-copiar" onclick="copiarChavePix()">Copiar chave</button>
+
+                        <p class="pix-total">Valor do pedido: <strong id="pix-valor">R$ 0,00</strong></p>
+                    </div>
+                </div>
+            </section>
+
+            <button type="submit" class="btn">
+                Confirmar pedido
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Esquina do Sabor</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>
+

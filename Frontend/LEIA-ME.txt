@@ -1,0 +1,17 @@
+ATUALIZACAO DE PARCELAMENTO - ESQUINA DO SABOR
+
+Copie/substitua estes arquivos nos mesmos caminhos dentro da pasta do projeto:
+  Frontend/script.js
+  Frontend/pages/checkout.html
+  Frontend/css/style.css
+
+No checkout, ao selecionar Cartao de credito, aparece a selecao de 1x a 12x.
+O sistema calcula as parcelas sem juros, distribui corretamente eventuais
+centavos restantes e registra o parcelamento no campo de pagamento do pedido.
+
+IMPORTANTE: esta e uma simulacao academica. Ela nao coleta dados do cartao,
+nao autoriza compras e nao realiza cobrancas reais. Para parcelamento real,
+e necessario integrar o checkout a um provedor/adquirente de pagamentos.
+
+Depois de substituir os arquivos, reinicie o servidor e atualize a pagina
+com Ctrl+F5.

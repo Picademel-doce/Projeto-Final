@@ -1,0 +1,541 @@
+
+/* =================================
+   ESQUINA DO SABOR - ESTILIZAÇÃO
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+}
+
+/* CABEÇALHO */
+
+.header {
+    background: #ff6b00;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.header h1 {
+    font-size: 25px;
+}
+
+.header nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav a:hover {
+    color: #ffe0c2;
+}
+
+/* BANNER */
+
+.banner {
+    min-height: 300px;
+    background: linear-gradient(120deg, #ff6b00, #ff9c42);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.banner h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+/* CONTEÚDO */
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 40px auto;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+section h2,
+.container h2 {
+    margin-bottom: 20px;
+}
+
+/* BOTÕES */
+
+.btn,
+.btn-secundario {
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn {
+    background: #ff6b00;
+    color: white;
+}
+
+.btn:hover {
+    background: #e65f00;
+}
+
+.btn-secundario {
+    background: #eeeeee;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* CATEGORIAS */
+
+.categories {
+    padding: 35px 6%;
+}
+
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+}
+
+.grid-categorias a {
+    background: white;
+    padding: 25px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+.grid-categorias a:hover {
+    color: #ff6b00;
+    transform: translateY(-3px);
+}
+
+/* PRODUTOS EM GRID */
+
+.featured {
+    padding: 20px 6%;
+}
+
+.grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.produto {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px #00000012;
+    transition: 0.2s;
+}
+
+.produto:hover {
+    transform: translateY(-4px);
+}
+
+.produto img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.produto-info {
+    padding: 16px;
+}
+
+.produto-info h3 {
+    margin-bottom: 8px;
+}
+
+.produto-info p {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.preco {
+    display: block;
+    color: #ff6b00;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.produto-info button {
+    width: 100%;
+}
+
+/* CATEGORIAS DO CARDÁPIO */
+
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.categorias button {
+    border: none;
+    background: white;
+    padding: 12px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.categorias button:hover {
+    background: #ff6b00;
+    color: white;
+}
+
+/* PESQUISA E FORMULÁRIOS */
+
+input,
+select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    margin: 8px 0 18px;
+    font-size: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #ff9c42;
+}
+
+/* CARRINHO */
+
+#itens-carrinho {
+    display: grid;
+    gap: 15px;
+}
+
+.item-carrinho {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.controles {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.controles button {
+    border: none;
+    background: #ff6b00;
+    color: white;
+    padding: 8px 13px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remover {
+    background: #dc3545 !important;
+}
+
+/* RESUMO */
+
+.resumo {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 25px;
+    max-width: 500px;
+}
+
+.resumo p {
+    margin: 15px 0;
+}
+
+/* FORMULÁRIO */
+
+#form-pedido {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 650px;
+}
+
+#form-pedido h3 {
+    margin: 20px 0;
+}
+
+#form-pedido button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* HISTÓRICO */
+
+.pedido-card {
+    background: white;
+    padding: 22px;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    border-left: 5px solid #ff6b00;
+}
+
+.pedido-card p {
+    margin: 9px 0;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: #292929;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* MENSAGENS */
+
+.vazio {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    color: #777;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 650px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .banner {
+        min-height: 250px;
+        padding: 30px 6%;
+    }
+
+    .banner h2 {
+        font-size: 27px;
+    }
+
+    .grid-produtos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .produto img {
+        height: 125px;
+    }
+
+    .produto-info {
+        padding: 11px;
+    }
+
+    .produto-info h3 {
+        font-size: 15px;
+    }
+
+    .produto-info p {
+        font-size: 12px;
+    }
+
+    .produto-info button {
+        font-size: 12px;
+        padding: 10px 5px;
+    }
+}
+
+
+
+/* PAGAMENTO PIX - DEMONSTRACAO */
+.pix-area {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 22px;
+    margin: 25px 0;
+    box-shadow: 0 2px 10px #0000000a;
+}
+
+.pix-area[hidden] {
+    display: none;
+}
+
+.pix-area h3 {
+    margin-bottom: 10px;
+}
+
+.pix-aviso {
+    color: #7a4b00;
+    background: #fff5df;
+    border: 1px solid #ffe3a6;
+    border-radius: 8px;
+    padding: 11px 13px;
+    line-height: 1.5;
+    margin: 12px 0 20px;
+}
+
+.pix-conteudo {
+    display: grid;
+    grid-template-columns: minmax(190px, 230px) minmax(240px, 1fr);
+    align-items: center;
+    gap: 25px;
+}
+
+.pix-qr-bloco {
+    text-align: center;
+}
+
+.pix-qrcode {
+    width: 210px;
+    min-height: 210px;
+    margin: 0 auto 8px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: anywhere;
+    font-size: 12px;
+    color: #777;
+}
+
+.pix-qrcode img,
+.pix-qrcode canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+.pix-qr-bloco p,
+.pix-total {
+    color: #555;
+    font-size: 14px;
+}
+
+.pix-dados input {
+    margin-bottom: 8px;
+}
+
+.pix-copiar {
+    margin-top: 4px;
+}
+
+.pix-total {
+    margin-top: 20px;
+}
+
+.pix-total strong {
+    color: #ff6b00;
+    font-size: 18px;
+}
+
+@media (max-width: 650px) {
+    .pix-conteudo {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* PARCELAMENTO NO CARTAO - DEMONSTRACAO */
+.cartao-area {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px #0000000a;
+}
+
+.cartao-area[hidden] {
+    display: none;
+}
+
+.cartao-area h3 {
+    margin-bottom: 14px;
+}
+
+.cartao-area label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.cartao-area select {
+    max-width: 220px;
+    margin-bottom: 12px;
+}
+
+.parcelamento-resumo {
+    color: #e65f00;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 8px 0;
+}
+
+.cartao-aviso {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 10px;
+}

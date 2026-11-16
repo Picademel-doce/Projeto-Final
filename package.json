@@ -1,0 +1,13 @@
+{
+  "name": "esquina-do-sabor",
+  "version": "1.0.0",
+  "description": "Projeto acadêmico de delivery Esquina do Sabor",
+  "main": "backend/api.js",
+  "scripts": {
+    "start": "node backend/api.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7"
+  }
+}

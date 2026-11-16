@@ -1,0 +1,16 @@
+ATUALIZACAO DO PIX - ESQUINA DO SABOR
+
+Copie/substitua estes arquivos nos mesmos caminhos dentro da pasta do seu projeto:
+  Frontend/script.js
+  Frontend/pages/checkout.html
+  Frontend/css/style.css
+
+Depois, reinicie o servidor e atualize a pagina do checkout (Ctrl+F5).
+
+IMPORTANTE:
+Esta implementacao e uma demonstracao academica. Ela cria uma chave aleatoria
+local (UUID) e um QR Code com os dados demonstrativos do pedido. Isso NAO e uma
+chave Pix cadastrada em banco e NAO recebe dinheiro de verdade. Para pagamentos
+reais, o estabelecimento precisa usar uma chave Pix ativa, cadastrada no banco,
+e uma integracao com um provedor de pagamentos. O QR Code.js e carregado pela
+internet via CDN.

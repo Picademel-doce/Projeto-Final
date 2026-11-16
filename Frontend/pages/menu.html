@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Esquina do Sabor</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>🍔 Esquina do Sabor</h1>
+
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="menu.html">Cardápio</a>
+            <a href="cart.html">Carrinho</a>
+            <a href="orders.html">Minhas compras</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h2>Nosso cardápio</h2>
+        <p>Escolha seus produtos favoritos!</p>
+
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="Pesquisar produto..."
+        >
+
+        <div class="categorias">
+            <button onclick="filtrarCategoria('Todos')">Todos</button>
+            <button onclick="filtrarCategoria('Hambúrgueres')">Hambúrgueres</button>
+            <button onclick="filtrarCategoria('Bebidas')">Bebidas</button>
+            <button onclick="filtrarCategoria('Porções')">Porções</button>
+        </div>
+
+        <div id="lista-produtos" class="grid-produtos">
+            <!-- Produtos carregados pelo JavaScript -->
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Esquina do Sabor</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
+
